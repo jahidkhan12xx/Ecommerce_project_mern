@@ -1,41 +1,45 @@
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import UserLayout from "./components/Layout/UserLayout";
+import Home from "./pages/Home";
+import { useEffect } from "react";
+import Lenis from "lenis";
+import { Toaster } from "sonner";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import { AnimatePresence } from "motion/react";
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import UserLayout from './components/Layout/UserLayout';
-import Home from './pages/Home';
-import { useEffect } from 'react';
-import Lenis from "lenis"
+const AppContent = () => {
+  const location = useLocation(); // ✅ Now inside BrowserRouter
 
-
-const App = () => {
-
-  
-
-  useEffect(()=>{
+  useEffect(() => {
     const lenis = new Lenis();
-
-    lenis.on("scroll", (event) => {
-      console.log(event.scrollPosition);
-      // Implement your logic here to handle scroll events.
-      // For example, you can change the header's background color or adjust the layout.
-    })
-
-    function raf(time){
+    function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
-    requestAnimationFrame(raf)
-  })
- 
+    requestAnimationFrame(raf);
+  }, []);
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<UserLayout/>}>
-          <Route index element={<Home/>} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Toaster position="top-right" />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<UserLayout />}>
+            <Route index element={<Home />} />
+            <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
+          </Route>
+        </Routes>
+      </AnimatePresence>
+    </>
   );
 };
+
+const App = () => (
+  <BrowserRouter>
+    <AppContent /> {/* ✅ Now `useLocation` is inside BrowserRouter */}
+  </BrowserRouter>
+);
 
 export default App;

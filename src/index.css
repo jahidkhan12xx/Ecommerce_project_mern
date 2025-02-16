@@ -8,10 +8,15 @@
   /* cursor: none; */
 }
 @theme {
-  --color-main-bg: #222831; 
-  --color-card-bg: #393E46; 
-  --color-just-text: #EEEEEE;
-  --color-heading-text: #00ADB5;
+  --color-main-bg: #F8F9FA; 
+  --color-card-bg: #FFFFFF; 
+  --color-text-primary: #212529;
+  --color-text-secondary: #6C757D;
+  --color-button-bg: #007BFF;
+  --color-top: #343A40;
+  --color-footer: #212529;
+  --color-footer-text: #F8F9FA;
+  
 }
 
 
@@ -19,8 +24,8 @@
 /* Apply to the whole body or a specific container */
 body::-webkit-scrollbar, 
 .scroll-container::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
+  width: 5px;
+  height: 10px;
 }
 
 body::-webkit-scrollbar-track, 

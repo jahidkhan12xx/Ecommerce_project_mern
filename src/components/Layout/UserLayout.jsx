@@ -54,7 +54,7 @@ const UserLayout = () => {
       <motion.div
       variants={variants}
       animate="default"
-      className=' bg-yellow-500 z-[9000] h-8 w-8 rounded-2xl fixed top-0 left-0 pointer-events-none'
+      className=' bg-top  z-[9000] h-8 w-8 rounded-2xl fixed top-0 left-0 pointer-events-none'
       style={{
         boxShadow: "0 0 20px rgba(0, 173, 181, 0.7), 0 0 40px rgba(0, 173, 181, 0.5)",
       }}></motion.div>
