@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import Reveal from "../../animation/Reveal";
 import ProductGrid from "./ProductGrid";
-import { motion } from "motion/react";
 
 const selectedProduct = {
   name: "Stylish Jacket",

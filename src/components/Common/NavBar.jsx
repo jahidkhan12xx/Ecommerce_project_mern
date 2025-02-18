@@ -47,7 +47,7 @@ const NavBar = () => {
           className=" hidden md:flex space-x-6"
         >
           <NavLink
-            to="#"
+            to="/collections/all"
             className="   text-just-text hover:text-black text-sm font-medium uppercase"
           >
             Men

@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import Reveal from "../animation/Reveal";
 import Hero from "../components/Layout/Hero";
 import GenderCollectionSection from "../components/Products/GenderCollectionSection";
@@ -8,6 +9,11 @@ import ProductGrid from "../components/Products/ProductGrid";
 import FeaturedCollection from "../components/Products/FeaturedCollection";
 import FeaturesSection from "../components/Products/FeaturesSection";
 import Transition from "../components/Transition";
+import { useEffect, useState } from "react";
+import Preloader from "../components/Preloader/Preloader";
+
+
+
 
 
 const placeHolderProducts = [
@@ -101,8 +107,9 @@ const placeHolderProducts = [
   }
 ]
 const Home = () => {
+ 
   return (
-    <div>
+    <div className="">
       <div className="mb-[10vh]">
         <Hero />
       </div>
@@ -129,7 +136,8 @@ const Home = () => {
         <ProductDetails />
       </div>
       <div className=" container mx-auto mb-[20vh] overflow-hidden">
-        <Reveal>
+       <div className=" mb-6">
+       <Reveal>
           <h1 className=" px-5 lg:px-0 text-2xl lg:text-4xl font-bold text-left text-text-primary">
             {" "}
             #Top Wears for Women
@@ -141,6 +149,7 @@ const Home = () => {
             Most demanding product on our store. Its the most popular
           </p>
         </Reveal>
+       </div>
 
         <ProductGrid products={placeHolderProducts} />
         
