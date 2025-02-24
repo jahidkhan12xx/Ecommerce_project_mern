@@ -26,7 +26,7 @@ const ProductGrid = ({ products }) => {
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold text-gray-900">{product.name}</h3>
-              <p className="text-gray-600 text-sm">${product.price}</p>
+              <p className="text-top text-sm">${product.price}</p>
             </div>
           </Link>
         </motion.div>

@@ -8,7 +8,7 @@ const CartContents = () => {
       size: "M",
       color: "Red",
       quantity: 1,
-      price: 15,
+      price: 150,
       image: "https://picsum.photos/200?random=1",
     },
     {
@@ -17,7 +17,7 @@ const CartContents = () => {
       size: "L",
       color: "Blue",
       quantity: 1,
-      price: 25,
+      price: 250,
       image: "https://picsum.photos/200?random=2",
     },
   ];
@@ -40,15 +40,15 @@ const CartContents = () => {
            </div>
             <div>
               <h3 className="font-semibold text-lg text-gray-800">{product.name}</h3>
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-text-secondary">
                 size: {product.size} | color: {product.color}
               </p>
               <div className="flex items-center mt-2 space-x-4">
-                <button className="border border-gray-300 rounded-lg p-2 text-xl text-gray-600 hover:bg-gray-100 transition">
+                <button className="border border-gray-300 rounded-lg p-2 text-xl text-top hover:bg-gray-100 transition">
                   -
                 </button>
                 <span className="text-lg font-semibold text-gray-700">{product.quantity}</span>
-                <button className="border border-gray-300 rounded-lg p-2 text-xl text-gray-600 hover:bg-gray-100 transition">
+                <button className="border border-gray-300 rounded-lg p-2 text-xl text-top hover:bg-gray-100 transition">
                   +
                 </button>
               </div>

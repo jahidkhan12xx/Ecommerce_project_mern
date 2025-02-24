@@ -11,6 +11,9 @@ import Profile from "./pages/Profile";
 import CollectionPage from "./pages/CollectionPage";
 import ProductDetails from "./components/Products/ProductDetails";
 import Checkout from "./components/Cart/Checkout";
+import OrderConfirmation from "./pages/OrderConfirmation";
+import OrderDetails from "./pages/OrderDetails";
+import MyOrderList from "./pages/MyOrderList";
 
 const AppContent = () => {
   const location = useLocation(); 
@@ -37,6 +40,9 @@ const AppContent = () => {
             <Route path="/collections/:collection" element={<CollectionPage/>} />
             <Route path="/product/:id" element={<ProductDetails/>} />
             <Route path="/checkout" element={<Checkout/>} />
+            <Route path="/order-confirmation" element={<OrderConfirmation/>} />
+            <Route path="/profile/order/:id" element={<OrderDetails/>}/>
+            <Route path="/my-orders" element={<MyOrderList/>}/>
           </Route>
         </Routes>
       </AnimatePresence>

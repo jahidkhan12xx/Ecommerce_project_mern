@@ -129,7 +129,7 @@ const FilterSideBar = (() => {
                             value={color}
                             name="color"
                             onClick={handleFilterChange}
-                            className={`w-8 h-8 rounded-full border-2 cursor-pointer transition hover:scale-105 ${
+                            className={`w-7 h-7 rounded-full border-2 cursor-pointer transition hover:scale-105 ${
                                 filters.color === color ? "ring-2 ring-text-primary " : ""
                             }`}
                             style={{ backgroundColor: color.toLowerCase() }}
@@ -141,7 +141,7 @@ const FilterSideBar = (() => {
             {/* Size Filter */}
             <div className="mb-6">
                 <label className="block font-medium mb-2">Size</label>
-                {sizes.map((size) => (
+               <div className=" flex flex-wrap gap-3 items-center"> {sizes.map((size) => (
                     <div key={size} className="flex items-center mb-1">
                         <input
                             value={size}
@@ -153,12 +153,13 @@ const FilterSideBar = (() => {
                         />
                         <span>{size}</span>
                     </div>
-                ))}
+                ))}</div>
             </div>
 
             {/* Material Filter */}
             <div className="mb-6">
                 <label className="block font-medium mb-2">Material</label>
+                <div className="flex flex-wrap gap-2 items-center">
                 {materials.map((material) => (
                     <div key={material} className="flex items-center mb-1">
                         <input
@@ -172,6 +173,7 @@ const FilterSideBar = (() => {
                         <span>{material}</span>
                     </div>
                 ))}
+                </div>
             </div>
 
             {/* Brand Filter */}

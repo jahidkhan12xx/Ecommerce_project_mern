@@ -113,23 +113,23 @@ const NavBar = () => {
       >
         <div className=" flex justify-end p-4">
           <button onClick={toogleNavDrawer}>
-            <IoMdClose className="h-6 w-6 text-gray-600" />
+            <IoMdClose className="h-6 w-6 text-top" />
           </button>
         </div>
 
         <div className=" p-4">
           <h2 className=" text-xl font-semibold mb-4">Menu</h2>
           <nav className=" space-y-4">
-            <NavLink className="block text-gray-600 hover:text-black">
+            <NavLink className="block text-top hover:text-black">
               Men
             </NavLink>
-            <NavLink className="block text-gray-600 hover:text-black">
+            <NavLink className="block text-top hover:text-black">
               WoMen
             </NavLink>
-            <NavLink className="block text-gray-600 hover:text-black">
+            <NavLink className="block text-top hover:text-black">
               Top Wear
             </NavLink>
-            <NavLink className="block text-gray-600 hover:text-black">
+            <NavLink className="block text-top hover:text-black">
               Bottom Wear
             </NavLink>
           </nav>

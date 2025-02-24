@@ -19,7 +19,7 @@ const CartDrawer = ({drawerOpen,toggleCartDrawer}) => {
 
         <div className=" flex justify-end p=4">
             <button className=" cursor-pointer" onClick={toggleCartDrawer}>
-                <IoMdClose className="h-6 w-6 text-gray-600"/>
+                <IoMdClose className="h-6 w-6 text-top"/>
             </button>
         </div>
 
@@ -31,7 +31,7 @@ const CartDrawer = ({drawerOpen,toggleCartDrawer}) => {
 
         <div className="p-4 bg-white sticky bottom-0">
           <button onClick={handleCheckout} className="cursor-pointer w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition">Checkout</button>
-          <p className=" text-sm tracking-tight text-gray-500 mt-2 text-center">Shipping, taxes, and discount codes calculated at checkout.</p>
+          <p className=" text-sm tracking-tight text-text-secondary mt-2 text-center">Shipping, taxes, and discount codes calculated at checkout.</p>
 
         </div>
 

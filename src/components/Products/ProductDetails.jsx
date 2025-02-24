@@ -168,7 +168,7 @@ const ProductDetails = () => {
             <Reveal><h1 className="text-2xl md:text-3xl font-semibold mb-2">
               {selectedProduct.name}
             </h1></Reveal>
-            <Reveal><p className="text-lg text-gray-500 line-through">
+            <Reveal><p className="text-lg text-text-secondary line-through">
               {selectedProduct.originalPrice &&
                 `$${selectedProduct.originalPrice}`}
             </p></Reveal>
@@ -188,7 +188,7 @@ const ProductDetails = () => {
                       backgroundColor: color.toLowerCase(),
                       filter: "brightness(0.8)",
                     }}
-                    className={`w-8 h-8 cursor-pointer rounded-full ${
+                    className={`w-8 h-8 hover:scale-105 cursor-pointer rounded-full ${
                       selectedColor == color
                         ? "border-4 border-black"
                         : "border-gray-300"
@@ -205,7 +205,7 @@ const ProductDetails = () => {
                   <button
                     key={size}
                     onClick={() => setSelectedSize(size)}
-                    className={`px-4 py-2 rounded border cursor-pointer border-gray-300 ${
+                    className={`px-4 py-2 rounded border hover:scale-105 cursor-pointer border-gray-300 ${
                       selectedSize === size
                         ? "bg-top text-main-bg"
                         : "bg-main-bg text-top"

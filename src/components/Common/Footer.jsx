@@ -23,12 +23,12 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="p-3 flex-1 border text-main-bg border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all text-sm"
+              className="p-3 flex-1 border text-main-bg border-text-secondary rounded-l-md focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all text-sm"
               required
             />
             <motion.button
               type="submit"
-              className="bg-button-bg text-white px-6 py-3 rounded-r-md hover:bg-gray-800 transition text-sm cursor-pointer"
+              className="bg-text-secondary text-white px-6 py-3 rounded-r-md hover:bg-gray-800 transition text-sm cursor-pointer"
             >
               Subscribe
             </motion.button>
@@ -40,22 +40,22 @@ const Footer = () => {
           <h3 className="text-lg font-medium text-main-bg  mb-4">Shop</h3>
           <ul className="space-y-2 ">
             <li>
-              <Link className="hover:text-gray-500" to="#">
+              <Link className="hover:text-text-secondary" to="#">
                 Men's Top Wear
               </Link>
             </li>
             <li>
-              <Link className="hover:text-gray-500" to="#">
+              <Link className="hover:text-text-secondary" to="#">
                 Women's Top Wear
               </Link>
             </li>
             <li>
-              <Link className="hover:text-gray-500" to="#">
+              <Link className="hover:text-text-secondary" to="#">
                 Men's Bottom Wear
               </Link>
             </li>
             <li>
-              <Link className="hover:text-gray-500" to="#">
+              <Link className="hover:text-text-secondary" to="#">
                 Women's Bottom Wear
               </Link>
             </li>
@@ -67,22 +67,22 @@ const Footer = () => {
           <h3 className="text-lg font-medium text-main-bg  mb-4">Support</h3>
           <ul className="space-y-2 ">
             <li>
-              <Link className="hover:text-gray-500" to="#">
+              <Link className="hover:text-text-secondary" to="#">
                 Contact Us
               </Link>
             </li>
             <li>
-              <Link className="hover:text-gray-500" to="#">
+              <Link className="hover:text-text-secondary" to="#">
                 About Us
               </Link>
             </li>
             <li>
-              <Link className="hover:text-gray-500" to="#">
+              <Link className="hover:text-text-secondary" to="#">
                 FAQ
               </Link>
             </li>
             <li>
-              <Link className="hover:text-gray-500" to="#">
+              <Link className="hover:text-text-secondary" to="#">
                 Features
               </Link>
             </li>
@@ -93,13 +93,13 @@ const Footer = () => {
         <div className=" lg:text-left md:text-left">
           <h3 className="text-lg font-medium text-main-bg  mb-4">Follow Us</h3>
           <div className="flex  space-x-4 mb-6">
-            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-top">
               <TbBrandMeta className="h-6 w-6" />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-top">
               <TbBrandInstagram className="h-6 w-6" />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-top">
               <RiTwitterXLine className="h-6 w-6" />
             </a>
           </div>

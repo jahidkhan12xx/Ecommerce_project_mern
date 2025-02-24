@@ -4,13 +4,11 @@ import Hero from "../components/Layout/Hero";
 import GenderCollectionSection from "../components/Products/GenderCollectionSection";
 import NewArrivals from "../components/Products/NewArrivals";
 import ProductDetails from "../components/Products/ProductDetails";
-import { motion } from "motion/react";
+
 import ProductGrid from "../components/Products/ProductGrid";
 import FeaturedCollection from "../components/Products/FeaturedCollection";
 import FeaturesSection from "../components/Products/FeaturesSection";
 import Transition from "../components/Transition";
-import { useEffect, useState } from "react";
-import Preloader from "../components/Preloader/Preloader";
 
 
 
