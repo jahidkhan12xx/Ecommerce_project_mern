@@ -29,10 +29,10 @@ const NavBar = () => {
         {/* Left -logo */}
         <div>
           <motion.div
-            
-            // initial={{y:"30vh",opacity:0}}
-            // animate={{y:0,opacity:1}}
-            // transition={{delay:0.5,duration:2,type:"spring",stiffness:90}}
+
+          // initial={{y:"30vh",opacity:0}}
+          // animate={{y:0,opacity:1}}
+          // transition={{delay:0.5,duration:2,type:"spring",stiffness:90}}
           >
             <Link to="/" className="text-3xl font-bold text-just-text">
               Jstore
@@ -79,6 +79,12 @@ const NavBar = () => {
           // transition={{delay:0.5,duration:2,type:"spring",stiffness:90}}
           className=" flex items-center space-x-4"
         >
+          <Link
+            to="/admin"
+            className="bg-top rounded-xl text-main-bg px-2 py-0.5 text-sm"
+          >
+            Admin
+          </Link>
           <Link to="/profile" className="hover:text-black">
             <HiOutlineUser className="h-6 w-6 text-just-text" />
           </Link>
@@ -120,12 +126,8 @@ const NavBar = () => {
         <div className=" p-4">
           <h2 className=" text-xl font-semibold mb-4">Menu</h2>
           <nav className=" space-y-4">
-            <NavLink className="block text-top hover:text-black">
-              Men
-            </NavLink>
-            <NavLink className="block text-top hover:text-black">
-              WoMen
-            </NavLink>
+            <NavLink className="block text-top hover:text-black">Men</NavLink>
+            <NavLink className="block text-top hover:text-black">WoMen</NavLink>
             <NavLink className="block text-top hover:text-black">
               Top Wear
             </NavLink>
